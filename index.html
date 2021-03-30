@@ -5,34 +5,31 @@
         <title>Advanced Css - Assignment 1</title>
     </head>
     <style>
-        a[class*="Goo"] {
+        a[href^="https://www.google.com"]{
             color: green;
         }
-        a[target="_blank"]{
+        a[href^="https://www.link-group.eu"]{
             color: red;
         }
     /* End Paragraph1/2 */
 
     #prvi-div > p::after {
-        content:"-NEW";
-        color: rgb(231, 231, 39);
+        content: " -NEW ";
+        color: yellow;
     }
     /* End #prvi-div */
-    #drugi-div > p:nth-child(odd){
+    #drugi-div p:nth-child(odd) {
         color: blue;
     }
-    #drugi-div > p:nth-child(even){
+    #drugi-div p:nth-child(even) {
         color:red;
     }
     /* End #drugi-div*/
-    #drugi-div~p:last-child:hover {
+    body > p:last-child:hover {
        font-style: italic;
     }
-    /*
-    p:nth-child(9):hover{ RADI TAKODJE 
-        font-style: italic;
-    ??? Zasto pod brojem 9..Kada bi trebalo pod brojem 8??*/
-    }
+    /*End :hover*/
+  
     </style>
     <body>
         <h1>Main Heading</h1>
