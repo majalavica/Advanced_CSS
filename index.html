@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Advanced Css - Assignment 1</title>
@@ -8,23 +8,23 @@
         a[href^="https://www.google.com"]{
             color: green;
         }
-        a[href^="https://www.link-group.eu"]{
+        a[target="_blank"]{
             color: red;
         }
     /* End Paragraph1/2 */
 
-    #prvi-div > p::after {
+    #first-div > p::after {
         content: " -NEW ";
         color: yellow;
     }
-    /* End #prvi-div */
-    #drugi-div p:nth-child(odd) {
+    /* End #first-div */
+    #second-div p:nth-child(odd) {
         color: blue;
     }
-    #drugi-div p:nth-child(even) {
+    #second-div p:nth-child(even) {
         color:red;
     }
-    /* End #drugi-div*/
+    /* End #second-div*/
     body > p:last-child:hover {
        font-style: italic;
     }
@@ -34,22 +34,22 @@
     <body>
         <h1>Main Heading</h1>
         <p>Paragraph 1</p>
-        <a href="https://www.google.com/" class="Google">Google</a>
-        <a href="https://www.google.com/doodles" Class="Google">Google Doodles</a>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/doodles">Google Doodles</a>
         <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
-    <div id="prvi-div">
+    <div id="first-div">
         <h2>Subheading</h2>
         <p>Paragraph 2</p>
         <p>Paragraph 3</p>
     </div>
-    <div id="drugi-div">
-        <h3>Sub subheading</h3>
-        <p>Paragraph 4</p>
-        <p>Paragraph 5</p>
-        <p>Paragraph 6</p>
-        <p>Paragraph 7</p>
-        <p>Paragraph 8</p>
-    </div>    
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>    
     </div> 
     <p>Paragraph 9</p>
     <p>Paragraph 10</p>
